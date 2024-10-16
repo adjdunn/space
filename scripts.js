@@ -43,19 +43,27 @@ window.onload = function() {
 const spaceImages = [
     {
         url: "https://images-assets.nasa.gov/image/PIA12348/PIA12348~thumb.jpg",
-        description: "The Pinwheel Galaxy, also known as Messier 101, is a face-on spiral galaxy located 21 million light-years away in the constellation Ursa Major."
-    },
-    {
-        url: "https://images-assets.nasa.gov/image/PIA00342/PIA00342~thumb.jpg",
-        description: "The Great Red Spot on Jupiter, a storm bigger than Earth that has been raging for hundreds of years."
+        description: "The Pinwheel Galaxy (M101) is a face-on spiral galaxy located about 21 million light-years away in the constellation Ursa Major."
     },
     {
         url: "https://images-assets.nasa.gov/image/PIA17563/PIA17563~thumb.jpg",
-        description: "The Pillars of Creation in the Eagle Nebula, towering columns of cosmic dust and gas where new stars are born."
+        description: "The Pillars of Creation in the Eagle Nebula (M16), as seen by NASA's Hubble Space Telescope. These elephant trunks of interstellar gas and dust are sites of ongoing star formation."
     },
     {
         url: "https://images-assets.nasa.gov/image/PIA14293/PIA14293~thumb.jpg",
-        description: "Saturn's rings and moons, a breathtaking view captured by the Cassini spacecraft."
+        description: "Saturn and its rings, as viewed by NASA's Cassini spacecraft. The rings are made mostly of water ice, with some rocky debris."
+    },
+    {
+        url: "https://images-assets.nasa.gov/image/PIA17669/PIA17669~thumb.jpg",
+        description: "The Orion Nebula, a stellar nursery where new stars are being born. It's visible to the naked eye in the constellation Orion."
+    },
+    {
+        url: "https://images-assets.nasa.gov/image/PIA16239/PIA16239~thumb.jpg",
+        description: "The Andromeda Galaxy (M31), the nearest major galaxy to our Milky Way. It's approximately 2.5 million light-years away."
+    },
+    {
+        url: "https://images-assets.nasa.gov/image/PIA16008/PIA16008~thumb.jpg",
+        description: "The Crab Nebula, a supernova remnant in the constellation Taurus. It's the expanding debris of a massive star that exploded in 1054 AD."
     }
 ];
 

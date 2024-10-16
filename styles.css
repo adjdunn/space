@@ -213,9 +213,9 @@ footer p {
 .space-showcase {
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
-    padding: 20px;
-    margin: 30px auto;
-    max-width: 600px;
+    padding: 25px;
+    margin: 40px auto;
+    max-width: 700px;
     text-align: center;
 }
 
@@ -226,18 +226,18 @@ footer p {
 #showcase-image {
     max-width: 100%;
     height: auto;
-    max-height: 300px;
+    max-height: 400px;
     object-fit: cover;
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     transition: opacity 0.5s ease-in-out;
 }
 
 #showcase-description {
     color: #f0f0ff;
-    font-size: 1em;
-    line-height: 1.4;
+    font-size: 1.1em;
+    line-height: 1.5;
     transition: opacity 0.5s ease-in-out;
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 95%;
 }
