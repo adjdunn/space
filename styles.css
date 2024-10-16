@@ -1,0 +1,243 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000033;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Starry Background */
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: 
+        radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+        radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+        radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+        radial-gradient(white, rgba(255,255,255,.05) 2px, transparent 50px);
+    background-size: 800px 800px, 400px 400px, 600px 600px, 1000px 1000px;
+    animation: animateStars 50s linear infinite;
+    z-index: -1;
+}
+
+@keyframes animateStars {
+    from { transform: translateY(0); }
+    to { transform: translateY(-1000px); }
+}
+
+/* Header */
+header {
+    background: linear-gradient(to bottom, #000066, #000033);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: rgba(0, 0, 102, 0.8);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff00ff;
+}
+
+/* Planet Cards */
+.planet-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.planet-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s;
+}
+
+.planet-card:hover {
+    transform: translateY(-10px);
+}
+
+.planet-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.planet-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: rotatePlanet 20s infinite linear;
+}
+
+@keyframes rotatePlanet {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Fun Facts Section */
+.fun-facts {
+    background: rgba(0, 0, 153, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.fun-facts h2 {
+    margin-bottom: 15px;
+}
+
+.fun-facts p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+/* My Space Profile */
+.my-profile {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.my-profile h2 {
+    margin-bottom: 15px;
+}
+
+.my-profile p {
+    font-size: 1.2em;
+}
+
+/* Buttons */
+.space-button {
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    font-size: 1em;
+}
+
+.space-button:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 102, 0.8);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.intro-message {
+    color: #e0e0ff;
+    font-style: italic;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.section-heading {
+    text-align: center;
+    color: #e0e0ff;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.planet-order {
+    text-align: center;
+    color: #b0b0ff;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.space-showcase {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.showcase-container {
+    margin-top: 15px;
+}
+
+#showcase-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#showcase-description {
+    color: #f0f0ff;
+    font-size: 1em;
+    line-height: 1.4;
+    transition: opacity 0.5s ease-in-out;
+    margin: 0 auto;
+    max-width: 90%;
+}

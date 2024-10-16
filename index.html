@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Space Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Starry Background -->
+    <div class="stars"></div>
+
+    <!-- Header Section -->
+    <header>
+        <h1>🚀 Space Explorer 🌎</h1>
+        <h2>Discover the Wonders of Our Universe!</h2>
+        <p class="intro-message">Embark on an interstellar journey through our solar system and beyond. Learn fascinating facts about planets, stars, and the mysteries of space!</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#planets">Planets</a></li>
+            <li><a href="#fun-facts">Fun Facts</a></li>
+            <li><a href="#space-showcase">Showcase</a></li>
+        </ul>
+    </nav>
+
+    <!-- Planet Cards Section -->
+    <section id="planets">
+        <h3 class="section-heading">Our Solar System</h3>
+        <h4 class="planet-order">Planets from Closest to Farthest from the Sun</h4>
+        <div class="planet-container">
+            <div class="planet-card">
+                <div class="planet-image">
+                    <img src="https://images-assets.nasa.gov/image/PIA00232/PIA00232~small.jpg" alt="Mercury">
+                </div>
+                <h3>Mercury</h3>
+                <p>The smallest planet, closest to the Sun with extreme temperature variations.</p>
+                <button class="space-button" onclick="showPlanetInfo('Mercury')">Visit Mercury</button>
+            </div>
+
+            <div class="planet-card">
+                <div class="planet-image">
+                    <img src="https://images-assets.nasa.gov/image/PIA00271/PIA00271~small.jpg" alt="Venus">
+                </div>
+                <h3>Venus</h3>
+                <p>Earth's "sister planet" with a thick, toxic atmosphere and scorching temperatures.</p>
+                <button class="space-button" onclick="showPlanetInfo('Venus')">Visit Venus</button>
+            </div>
+
+            <div class="planet-card">
+                <div class="planet-image">
+                    <img src="https://images-assets.nasa.gov/image/PIA18033/PIA18033~small.jpg" alt="Earth">
+                </div>
+                <h3>Earth</h3>
+                <p>Our home planet, the only known world with life and liquid water on its surface.</p>
+                <button class="space-button" onclick="showPlanetInfo('Earth')">Visit Earth</button>
+            </div>
+
+            <div class="planet-card">
+                <div class="planet-image">
+                    <img src="https://images-assets.nasa.gov/image/PIA04591/PIA04591~orig.jpg" alt="Mars">
+                </div>
+                <h3>Mars</h3>
+                <p>The Red Planet! Home to the tallest mountain in our solar system.</p>
+                <button class="space-button" onclick="showPlanetInfo('Mars')">Visit Mars</button>
+            </div>
+
+            <div class="planet-card">
+                <div class="planet-image">
+                    <img src="https://images-assets.nasa.gov/image/PIA00343/PIA00343~small.jpg" alt="Jupiter">
+                </div>
+                <h3>Jupiter</h3>
+                <p>The biggest planet with a giant storm that's been raging for centuries!</p>
+                <button class="space-button" onclick="showPlanetInfo('Jupiter')">Visit Jupiter</button>
+            </div>
+
+            <div class="planet-card">
+                <div class="planet-image">
+                    <img src="https://images-assets.nasa.gov/image/PIA03152/PIA03152~small.jpg" alt="Saturn">
+                </div>
+                <h3>Saturn</h3>
+                <p>The planet with beautiful rings made of ice and rock!</p>
+                <button class="space-button" onclick="showPlanetInfo('Saturn')">Visit Saturn</button>
+            </div>
+
+            <div class="planet-card">
+                <div class="planet-image">
+                    <img src="https://images-assets.nasa.gov/image/PIA18182/PIA18182~small.jpg" alt="Uranus">
+                </div>
+                <h3>Uranus</h3>
+                <p>An ice giant that rotates on its side, with faint rings and many moons.</p>
+                <button class="space-button" onclick="showPlanetInfo('Uranus')">Visit Uranus</button>
+            </div>
+
+            <div class="planet-card">
+                <div class="planet-image">
+                    <img src="https://images-assets.nasa.gov/image/PIA01492/PIA01492~small.jpg" alt="Neptune">
+                </div>
+                <h3>Neptune</h3>
+                <p>The windiest planet, with speeds up to 1,200 mph in its blue atmosphere.</p>
+                <button class="space-button" onclick="showPlanetInfo('Neptune')">Visit Neptune</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fun Facts Section -->
+    <section id="fun-facts" class="fun-facts">
+        <h2 class="section-heading">🌟 Cosmic Fun Facts 🌟</h2>
+        <div class="fact-container">
+            <p id="fun-fact" class="fact-text">Did you know? Space is completely silent because there is no air to carry sound waves.</p>
+        </div>
+        <button class="space-button pulse-effect" onclick="displayRandomFact()">Discover Another Fact</button>
+    </section>
+
+    <!-- Space Image Showcase Section -->
+    <section id="space-showcase" class="space-showcase">
+        <h2 class="section-heading">🌌 Space Image Showcase 🌠</h2>
+        <div class="showcase-container">
+            <img id="showcase-image" src="https://images-assets.nasa.gov/image/PIA12348/PIA12348~thumb.jpg" alt="Space Image">
+            <p id="showcase-description">The Pinwheel Galaxy, also known as Messier 101, is a face-on spiral galaxy located 21 million light-years away in the constellation Ursa Major.</p>
+        </div>
+    </section>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Space Web Developer 👩‍🚀👨‍🚀</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="scripts.js"></script>
+</body>
+</html>
